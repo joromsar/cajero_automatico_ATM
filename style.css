@@ -1,0 +1,54 @@
+html{
+    background-color: #FBFE0F;
+}
+
+.background-image{
+    background-image:url(./images/photo1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:50vw;
+    
+}
+
+.text-responsive{
+    font-family: 'Abril Fatface', cursive;
+    width:65%;
+    font-size:4.5vw;
+    color:#ffffff;
+    text-shadow: 0.5px  #ffffff;
+}
+
+.navbar-color{
+    background-color:#A10089;
+    
+}
+
+.navbar-text{
+    color:#ffffff !important;
+    
+}
+.h3text{
+    font-family: 'Abril Fatface', cursive;
+}
+
+.padding-zero{
+    padding:0;
+    margin-top:0;
+}
+
+.hidden {
+    display: none;
+}
+
+.uk-position-center{
+    width:35%;
+}
+
+.text{
+    font-family: 'Abril Fatface', cursive
+}
+
+.button{
+    background-color: #3a12db;
+    color:#ffffff;
+}

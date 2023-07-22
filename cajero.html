@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- UIkit CSS -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/css/uikit.min.css" />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel&family=New+Rocker&family=Spicy+Rice&display=swap"
+            rel="stylesheet">
+
+        <title>Your Online ATM 24/7 | e-money</title>
+    </head>
+
+    <body>
+
+        <section class="uk-flex-center uk-flex uk-position-center">
+            
+            <div class="uk-card uk-card-default uk-card-body uk-width-1-1@m">
+                <div id="notification" class="hidden uk-margin-small-top uk-alert-danger uk-padding-small" uk-alert>
+                    <a class="uk-alert-close" uk-close></a>
+                    <p></p>
+                </div>
+            
+
+                <div class="uk-column-1-1 uk-margin-small-top uk-padding-small">
+                    <div>
+                        <h4 class="uk-card-title" id="saludo"></h4>
+                    </div>
+                   
+                </div>
+                
+                <form>
+                    <input  id="consignacion" class="uk-input uk-margin-bottom" type="number" placeholder="Enter the amount you want to deposit or withdraw">
+                    <nav class="uk-navbar-container">
+                        <div class="uk-container navbar-color">
+                            <div uk-navbar>
+                                <div class="uk-navbar-left">
+                                    <ul class="uk-navbar-nav uk-flex uk-flex-center uk-text-center">
+                                        <li>
+                                            <a id="consult" class="navbar-text uk-text-capitalize">Check your account balance</a>
+                                        </li>
+
+                                        <li>
+                                            <a id="deposit" class="navbar-text uk-text-capitalize">Make a Deposit</a> 
+                                        </li>
+                                        <li><a id="withdraw" class="navbar-text uk-text-capitalize">Make a Withdraw</a></li>
+                                    </ul>
+                    
+                                </div>
+                    
+                            </div>
+                        </div>
+                    </nav>
+
+                    <div id="notificationConsult" class="hidden uk-column-1-2 uk-margin-small-top uk-alert-success uk-padding-small">
+                        <div>
+                            <p id="saldo_current" class="uk-panel"></p>
+                        </div>
+                    </div>
+
+          
+                    <div class="uk-column-1-2 uk-margin-small-top uk-alert-primary uk-padding-small">
+                        <div>
+                            <div class="uk-panel">Transaction Value:</div>
+                        </div>
+                        <div>
+                            <p id="transaction_value" class="uk-panel"></p>
+                        </div>
+                        <div>
+                            <div class="uk-panel">New Balance:</div>
+                        </div>
+                        <div>
+                            <p id="saldo_actual" class="uk-panel"></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+
+            </section>
+            <!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/js/uikit-icons.min.js"></script>
+<script src="./cajero.js"></script>
+        </body>
+
+    </html>
